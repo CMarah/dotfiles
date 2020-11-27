@@ -11,6 +11,7 @@ ln -s ${BASEDIR}/zshrc ~/.zshrc
 
 # bash
 ln -s ${BASEDIR}/bashrc ~/.bashrc
+ln -s ${BASEDIR}/bash_aliases ~/.bash_aliases
 
 # Git
 ln -s ${BASEDIR}/gitconfig ~/.gitconfig
@@ -23,3 +24,6 @@ ln -s ${BASEDIR}/i3config ~/.config/i3/config
 mkdir ~/.config/polybar
 ln -s ${BASEDIR}/polybarconfig ~/.config/polybar/config
 ln -s ${BASEDIR}/polybarlaunch.sh ~/.config/polybar/launch.sh
+
+# alacritty
+ln -s ${BASEDIR}/alacritty.yml ~/.alacritty.yml
