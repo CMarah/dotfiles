@@ -8,6 +8,7 @@ ln -s ${BASEDIR}/vimrc ~/.vimrc
 
 # zsh
 ln -s ${BASEDIR}/zshrc ~/.zshrc
+ln -s ${BASEDIR}/p10k.zsh ~/.p10k.zsh
 
 # bash
 ln -s ${BASEDIR}/bashrc ~/.bashrc
