@@ -1,7 +1,7 @@
 Dotfiles & Utilities
 --------------------
 
-![Screenshot](images/sample.png)
+![Screenshot](https://raw.githubusercontent.com/CMarah/dotfiles/main/images/sample.PNG)
 
 
 - Window Manager: [_i3_](https://i3wm.org/)
