@@ -1,0 +1,15 @@
+[user]
+  email = carlos@marah.dev
+  name = Carlos
+[commit]
+  gpgSign = false
+[core]
+  editor = vim
+[alias]
+  co = checkout
+  di = diff
+  ci = commit
+  st = status
+  cm = commit
+[credential]
+  helper = cache
