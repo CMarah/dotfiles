@@ -43,7 +43,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Plugins #
 ###########
 
-plugins=(git colorize)
+plugins=(git)
 
 
 #################

@@ -127,7 +127,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-PATH="$PATH:/usr/local/go/bin"
+PATH="$PATH:/usr/local/go/bin:/home/marah/.local/bin"
 
 
 ##################
