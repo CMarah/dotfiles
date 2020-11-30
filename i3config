@@ -30,6 +30,8 @@ bindsym $mod+l focus right
 # splitting
 bindsym $mod+v split v
 bindsym $mod+b split h
+# fullscreen
+bindsym $mod+f fullscreen toggle
 # move
 bindsym Mod1+Shift+$left move left
 bindsym Mod1+Shift+$right move right
