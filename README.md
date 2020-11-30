@@ -8,6 +8,7 @@ Dotfiles & Utilities
 - Shell: _zsh_ + [_oh my zsh_](https://github.com/ohmyzsh/ohmyzsh) + [_power10k_](https://github.com/romkatv/powerlevel10k)
 - Terminal: [_alacritty_](https://github.com/alacritty/alacritty)
 - Font: [_MesloLGS NF_](https://github.com/romkatv/powerlevel10k-media/)
+- Launcher: [_rofi_](https://github.com/davatorium/rofi)
 
 \
 Utilities:
