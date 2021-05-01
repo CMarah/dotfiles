@@ -125,6 +125,7 @@ set foldlevel=99
 
 " YCM
 let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_auto_hover = ''
 "let g:ycm_key_list_select_completion = []
 
 
