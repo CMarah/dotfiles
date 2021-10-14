@@ -100,7 +100,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 
 
 # Background
-exec --no-startup-id xrandr --output HDMI-0 --rotate right
+exec --no-startup-id xrandr --output HDMI-0 --rotate right --left-of DP-2
 exec --no-startup-id feh --bg-fill '/home/carlos/Downloads/firewatch.jpg'
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets

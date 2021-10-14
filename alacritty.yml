@@ -111,7 +111,8 @@ colors:
   #
   #command: None
 
-background_opacity: 1.0
+window:
+  opacity: 1.0
 
 selection:
   # This string contains all characters that are used as separators for

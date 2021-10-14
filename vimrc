@@ -93,6 +93,7 @@ augroup AutoSaveFolds
   autocmd BufWinEnter * silent loadview
 augroup END
 
+
 " 4. Mappings
 imap kj <Esc>
 inoremap <Space><Tab> <Esc>/<++><Enter>cf>
@@ -104,6 +105,7 @@ autocmd FileType tex inoremap ,prop \begin{prop}\end{prop}<++><Esc>T}hT}i
 autocmd FileType tex inoremap ,teo \begin{thm}\end{thm}<++><Esc>T}hT}i
 autocmd FileType tex inoremap ,cor \begin{coro}\end{coro}<++><Esc>T}hT}i
 autocmd FileType tex inoremap ,bf \textbf{}<++><Esc>T{i
+autocmd FileType tex inoremap ,bf \emph{}<++><Esc>T{i
 autocmd FileType tex inoremap ,notat \itab{} \tab{<++>}\\<++><Esc>T{hT{i
 autocmd FileType tex inoremap ,enum \begin{enumerate}<CR>here<CR>\end{enumerate}<++><Esc>?here<Enter>cw
 autocmd FileType tex inoremap ,set $\{\ here\ \|\ <++>\ \}$<++><Esc>?here<Enter>cw
@@ -111,6 +113,8 @@ autocmd BufEnter *.tex set foldmethod=expr
 autocmd BufEnter *.tex set foldexpr=vimtex#fold#level(v:lnum)
 autocmd BufEnter *.tex set foldtext=vimtex#fold#text()
 
+map ,t i<FormattedMessage defaultMessage="<Esc>$a"/><Esc>
+map ,r iformatMessage({ defaultMessage: <Esc>$a })<Esc>
 
 " 5. Plugin options
 " VIMTEX
@@ -126,6 +130,9 @@ set foldlevel=99
 " YCM
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_auto_hover = ''
+let g:ycm_filetype_blacklist = {
+  \ 'tex': 1,
+\}
 "let g:ycm_key_list_select_completion = []
 
 
