@@ -79,6 +79,10 @@ alias gco='git checkout'
 alias gcm='git commit'
 alias ls='colorls --sd'
 alias crm='cd ~/coding/walcucrm'
+alias mauth='cd ~/coding/walcucrm/MAPP-Auth'
+alias mapi='cd ~/coding/walcucrm/MAPP-Api'
+alias mapex='cd ~/coding/walcucrm/MAPP-Externals'
+alias mawc='cd ~/coding/walcucrm/MAPP-WebClient'
 
 # Add ruby gems to path
 if which ruby >/dev/null && which gem >/dev/null; then
