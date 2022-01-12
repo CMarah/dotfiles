@@ -20,6 +20,8 @@ Plugin 'marijnh/tern_for_vim'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'lervag/vimtex'
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'junegunn/fzf.vim'
 "Plugin 'SirVer/ultisnips'
 "Plugin 'terryma/vim-multiple-cursors'
 "Plugin 'honza/vim-snippets'
@@ -30,7 +32,6 @@ Plugin 'lervag/vimtex'
 "Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 filetype plugin indent on         " Required by vundle
-
 
 " 2. Basics
 
@@ -90,7 +91,7 @@ endif
 augroup AutoSaveFolds
   autocmd!
   autocmd BufWinLeave * mkview
-  autocmd BufWinEnter * silent loadview
+  autocmd BufWinEnter * silent! loadview
 augroup END
 
 
@@ -134,7 +135,6 @@ let g:ycm_filetype_blacklist = {
   \ 'tex': 1,
 \}
 "let g:ycm_key_list_select_completion = []
-
 
 " 6. Colorscheme
 colorscheme jellybeans
