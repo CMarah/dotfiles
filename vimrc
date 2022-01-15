@@ -90,7 +90,7 @@ endif
 augroup AutoSaveFolds
   autocmd!
   autocmd BufWinLeave * mkview
-  autocmd BufWinEnter * silent loadview
+  autocmd BufWinEnter * silent! loadview
 augroup END
 
 " 4. Mappings
