@@ -9,6 +9,7 @@ Dotfiles & Utilities
 - Terminal: [_alacritty_](https://github.com/alacritty/alacritty)
 - Font: [_MesloLGS NF_](https://github.com/romkatv/powerlevel10k-media/)
 - Launcher: [_rofi_](https://github.com/davatorium/rofi)
+- Text Editor: [_VIM_](https://www.vim.org/) + [_Vundle_](https://github.com/VundleVim/Vundle.vim)
 
 \
 Utilities:

@@ -7,7 +7,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 # Path to oh-my-zsh installation.
-export ZSH="/home/marah/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
@@ -78,9 +78,30 @@ alias gst='git status'
 alias gco='git checkout'
 alias gcm='git commit'
 alias ls='colorls --sd'
+alias crm='cd ~/coding/walcucrm'
+alias mauth='cd ~/coding/walcucrm/MAPP-Auth'
+alias mapi='cd ~/coding/walcucrm/MAPP-Api'
+alias mapex='cd ~/coding/walcucrm/MAPP-Externals'
+alias mawc='cd ~/coding/walcucrm/MAPP-WebClient'
+
+# Add ruby gems to path
+if which ruby >/dev/null && which gem >/dev/null; then
+  PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+# WORK
+source /home/carlos/coding/Keys/variables.sh
+source /home/carlos/coding/Keys/setup_env.sh
+
+
+# NVM
+export NVM_DIR="$HOME/.config//nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # nvm bash_completion

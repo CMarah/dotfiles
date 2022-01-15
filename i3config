@@ -88,18 +88,19 @@ mode "resize" {
 }
 bindsym Mod1+r mode "resize"
 
-# Start i3bar
-#bar {
-#	status_command i3status
-#}
-
 # Gaps/Window Styling
 gaps outer 5
 gaps inner 5
 new_window 1pixel
 
+# Media Keys
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
+
 
 # Background
-exec --no-startup-id feh --bg-fill '/mnt/c/Users/Carlos/Documents/wallpapers/ghost.jpg'
-exec --no-startup-id compton
+exec --no-startup-id xrandr --output HDMI-0 --rotate right --left-of DP-2
+exec --no-startup-id feh --bg-fill '/home/carlos/Downloads/firewatch.jpg'
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
