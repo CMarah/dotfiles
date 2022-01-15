@@ -90,6 +90,7 @@ if grep -q Microsoft /proc/version; then
     fi
 fi
 
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
 if ! pgrep -x "i3" > /dev/null
 then
 	i3 &
