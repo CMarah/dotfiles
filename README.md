@@ -15,6 +15,7 @@ Dotfiles & Utilities
 Utilities:
 - [_Polybar_](https://github.com/polybar/polybar)
 - [_Neofetch_](https://github.com/dylanaraps/neofetch)
+- [ BetterLockScreen ](https://github.com/betterlockscreen/betterlockscreen)
 
 \
 Gems:
