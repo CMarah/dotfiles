@@ -45,3 +45,7 @@ ln -s ${dotdir}/polybarlaunch.sh ~/.config/polybar/launch.sh
 
 # alacritty
 ln -s ${dotdir}/alacritty.yml ~/.alacritty.yml
+
+# dunst
+mkdir -p ~/.config/dunst
+ln -s ${dotdir}/dunstrc ~/.config/dunst/dunstrc
