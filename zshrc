@@ -97,7 +97,7 @@ fi
 
 
 # WORK
-[ -f /home/carlos/coding/Keys/variabes.sh ] && source /home/carlos/coding/Keys/variables.sh
+[ -f /home/carlos/coding/Keys/variables.sh ] && source /home/carlos/coding/Keys/variables.sh
 [ -f /home/carlos/coding/Keys/setup_env.sh ] && source /home/carlos/coding/Keys/setup_env.sh
 
 
