@@ -107,3 +107,6 @@ exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
 
 # Lock screen
 bindsym Mod4+l exec betterlockscreen -l
+
+# picom
+exec --no-startup-id picom --xrender-sync-fence &
