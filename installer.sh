@@ -35,17 +35,19 @@ ln -s ${dotdir}/bash_aliases ~/.bash_aliases
 ln -s ${dotdir}/gitconfig ~/.gitconfig
 
 # i3
-mkdir -p ~/.config/i3
-ln -s ${dotdir}/i3config ~/.config/i3/config
+ln -s ${dotdir}/config/i3 ~/.config/i3
 
 # polybar
-mkdir -p ~/.config/polybar
-ln -s ${dotdir}/polybarconfig ~/.config/polybar/config
-ln -s ${dotdir}/polybarlaunch.sh ~/.config/polybar/launch.sh
+ln -s ${dotdir}/config/polybar ~/.config/polybar
 
 # alacritty
-ln -s ${dotdir}/alacritty.yml ~/.alacritty.yml
+ln -s ${dotdir}/config/alacritty ~/.config/alacritty
 
 # dunst
-mkdir -p ~/.config/dunst
-ln -s ${dotdir}/dunstrc ~/.config/dunst/dunstrc
+ln -s ${dotdir}/config/dunst ~/.config/dunst
+
+# eww
+ln -s ${dotdir}/config/eww ~/.config/eww
+
+# Picom
+ln -s ${dotdir}/config/picom.conf ~/.config/picom.conf

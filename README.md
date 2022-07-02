@@ -9,7 +9,7 @@ Dotfiles & Utilities
 - Terminal: [_alacritty_](https://github.com/alacritty/alacritty)
 - Font: [_MesloLGS NF_](https://github.com/romkatv/powerlevel10k-media/)
 - Launcher: [_rofi_](https://github.com/davatorium/rofi)
-- Text Editor: [_VIM_](https://www.vim.org/) + [_Vundle_](https://github.com/VundleVim/Vundle.vim)
+- Text Editor: [_Neovim_](https://github.com/CMarah/Neovim-from-scratch)
 
 \
 Utilities:
@@ -17,6 +17,8 @@ Utilities:
 - [_Neofetch_](https://github.com/dylanaraps/neofetch)
 - [ BetterLockScreen ](https://github.com/CMarah/betterlockscreen)
 - [ Dunst ](https://github.com/dunst-project/dunst)
+- [_eww_](https://github.com/elkowar/eww)
+- [_picom_](https://github.com/yshui/picom)
 
 \
 Gems:
