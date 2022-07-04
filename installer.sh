@@ -38,7 +38,7 @@ ln -s ${dotdir}/gitconfig ~/.gitconfig
 ln -s ${dotdir}/config/i3 ~/.config/i3
 
 # polybar
-ln -s ${dotdir}/config/polybar ~/.config/polybar
+cp -r ${dotdir}/config/polybar ~/.config/polybar
 
 # alacritty
 ln -s ${dotdir}/config/alacritty ~/.config/alacritty
