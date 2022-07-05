@@ -35,7 +35,8 @@ ln -s ${dotdir}/bash_aliases ~/.bash_aliases
 ln -s ${dotdir}/gitconfig ~/.gitconfig
 
 # i3
-ln -s ${dotdir}/config/i3 ~/.config/i3
+mkdir ~/.config/i3
+ln -s ${dotdir}/config/i3/config ~/.config/i3/config
 
 # polybar
 cp -r ${dotdir}/config/polybar ~/.config/polybar
