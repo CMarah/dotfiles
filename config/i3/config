@@ -40,7 +40,7 @@ bindsym Mod1+Shift+Right move right
 bindsym Mod1+Shift+Down move down
 bindsym Mod1+Shift+Up move up
 # Start rofi
-bindsym $mod+d exec rofi -show drun -columns 3
+bindsym $mod+d exec rofi -modi drun -show drun -columns 3
 # reload
 bindsym $mod+Shift+c reload
 
