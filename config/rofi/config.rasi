@@ -1,21 +1,20 @@
 configuration {
-  modi:			"window,drun,filebrowser";
-  sidebar-mode:		true;
-  show-icons:		false;
-  sort:			true;
-  sorting-method:	"normal";
-  disable-history:	false;
-  scroll-method:	0;
-  drun-display-format:	"{name}";
-  matching:		"fuzzy";
-  window-thumbnail:	true;
-  display-drun:		"Apps";
-  display-window:	"Windows";
-  display-filebrowser:	"Files";
+  modi:                "window,drun,filebrowser";
+  sidebar-mode:        true;
+  sort:	               true;
+  sorting-method:	     "fzf";
+  disable-history:     false;
+  scroll-method:       0;
+  drun-display-format: "{name}";
+  matching:            "fuzzy";
+  window-thumbnail:	   true;
+  display-drun:		     "Apps";
+  display-window:	     "Windows";
+  display-filebrowser: "Files";
 
   filebrowser {
-    directories-first:	true;
-    sorting-method:	"name";
+    directories-first: true;
+    sorting-method:	   "name";
   }
 }
 
