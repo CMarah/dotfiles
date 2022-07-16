@@ -69,7 +69,7 @@ ln -s ${dotdir}/config/eww/eww.yuck ~/.config/eww
 cp -r ${dotdir}/config/eww/Main ~/.config/eww
 cp -r ${dotdir}/config/eww/Misc ~/.config/eww
 cp -r ${dotdir}/config/eww/Player ~/.config/eww
-cp -r ${dotdir}/config/eww/System-menu ~/.config/eww
+cp -r ${dotdir}/config/eww/System\-menu ~/.config/eww
 
 # Picom
 echo "Linking picom config\n"
