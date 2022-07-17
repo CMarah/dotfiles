@@ -5,7 +5,7 @@ if [[ $1 == "--image" ]]; then
     if [[ -f "$FILE" ]]; then
         echo "../../.face"
     else
-        echo "System-Menu/images/profile.png"
+        echo "sysmenu/images/profile.png"
     fi
 fi
 

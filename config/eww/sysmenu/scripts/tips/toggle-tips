@@ -1,13 +1,13 @@
 #!/bin/bash
 
-STATUS=$(cat $HOME/.config/eww/System-Menu/scripts/tips/tips-lock)
+STATUS=$(cat $HOME/.config/eww/sysmenu/scripts/tips/tips-lock)
 
 toggle() {
     if [[ $STATUS == "on" ]]; then
-        echo "off" > $HOME/.config/eww/System-Menu/scripts/tips/tips-lock
+        echo "off" > $HOME/.config/eww/sysmenu/scripts/tips/tips-lock
         eww open --toggle tips
     else
-        echo "on" > $HOME/.config/eww/System-Menu/scripts/tips/tips-lock
+        echo "on" > $HOME/.config/eww/sysmenu/scripts/tips/tips-lock
         eww open --toggle tips
     fi
 }

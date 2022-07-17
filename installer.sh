@@ -1,11 +1,11 @@
-#!/bin/bash
-
 # Variables
-dotdir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+dotdir="$(pwd)"
+echo $dotdir
 olddir=~/.dotfiles_old             # old dotfiles backup directory
 
 # Create backup folder
 echo "Creating directory $olddir for backup\n"
+rm -r $olddir
 mkdir -p $olddir
 
 # VIM
@@ -19,14 +19,12 @@ echo "Linking zsh files\n"
 mv ~/.zshrc ~/.p10k.zsh $olddir
 ln -s ${dotdir}/zshrc ~/.zshrc
 ln -s ${dotdir}/p10k.zsh ~/.p10k.zsh
-echo ""
 
 # bash
 echo "Linking bash files\n"
 mv ~/.bashrc ~/.bash_aliases $olddir
 ln -s ${dotdir}/bashrc ~/.bashrc
 ln -s ${dotdir}/bash_aliases ~/.bash_aliases
-echo ""
 
 # Git
 echo "Linking gitconfig\n"
@@ -35,8 +33,8 @@ ln -s ${dotdir}/gitconfig ~/.gitconfig
 
 # i3
 echo "Linking i3 config\n"
-mkdir ~/.config/i3
 mv ~/.config/i3 $olddir
+mkdir ~/.config/i3
 ln -s ${dotdir}/config/i3/config ~/.config/i3/config
 
 # polybar
@@ -69,7 +67,7 @@ ln -s ${dotdir}/config/eww/eww.yuck ~/.config/eww
 cp -r ${dotdir}/config/eww/Main ~/.config/eww
 cp -r ${dotdir}/config/eww/Misc ~/.config/eww
 cp -r ${dotdir}/config/eww/Player ~/.config/eww
-cp -r ${dotdir}/config/eww/System\-menu ~/.config/eww
+cp -r ${dotdir}/config/eww/sysmenu ~/.config/eww
 
 # Picom
 echo "Linking picom config\n"
