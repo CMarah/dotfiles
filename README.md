@@ -19,6 +19,7 @@ Utilities:
 - [ Dunst ](https://github.com/dunst-project/dunst)
 - [_eww_](https://github.com/elkowar/eww)
 - [_picom_](https://github.com/yshui/picom)
+- [_dooit_](https://github.com/kraanzu/dooit)
 
 \
 Gems:
