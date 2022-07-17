@@ -41,6 +41,8 @@ bindsym Mod1+Shift+Down move down
 bindsym Mod1+Shift+Up move up
 # Start rofi
 bindsym $mod+d exec rofi -modi drun -show drun -columns 3
+# Start dooit
+bindsym $mod+t exec alacritty --title floater -e "dooit"
 # reload
 bindsym $mod+Shift+c reload
 
@@ -93,11 +95,13 @@ gaps outer 5
 gaps inner 5
 new_window 1pixel
 
+# Floating windows
+for_window [class="Alacritty" title="floater"] floating enable, resize set 1600 900, move window position center
+
 # Media Keys
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
-
 
 # Background
 exec --no-startup-id xrandr --output HDMI-0 --rotate right --left-of DP-2

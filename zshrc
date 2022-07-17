@@ -95,6 +95,9 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Add pip3.11 to path
+PATH=$PATH:/home/carlos/.local/bin
+
 
 # WORK
 [ -f /home/carlos/coding/Keys/variables.sh ] && source /home/carlos/coding/Keys/variables.sh
