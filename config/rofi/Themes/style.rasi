@@ -1,9 +1,10 @@
 
 * {
-  bg: red;
-  bgAlt: #24283B;
-  fg: #BB9AF7;
-  button: #414868;
+  bg: #FFDCC8;
+  fg: #F27649;
+  bgAlt: #260F25;
+  button: #F24C3D;
+
   background-color: @bg;
   text-color: @fg;
 }
