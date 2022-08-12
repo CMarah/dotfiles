@@ -1,0 +1,10 @@
+- name: NeoVIM
+  keybinds:
+  - name: Insert GitHub copilot
+    key: Ctrl + Enter
+  - name: Copy block
+    key: V
+- name: i3
+  keybinds:
+  - name: Abrir dooit
+    key: Alt + t
