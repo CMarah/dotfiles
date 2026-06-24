@@ -1,0 +1,5 @@
+# Stuff I add myself
+# [media-player]
+# interval=5
+[volume]
+interval=1
