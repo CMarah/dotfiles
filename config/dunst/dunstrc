@@ -23,8 +23,8 @@
 
     # dynamic width from 0 to 300
     # width = (0, 300)
-    # constant width of 300
-    width = 300
+    # constant width of 360
+    width = 360
 
     # The maximum height of a single notification, excluding the frame.
     height = 200
@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 10x50
+    offset = 16x16
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -76,26 +76,29 @@
     separator_height = 2
 
     # Padding between text and separator.
-    padding = 8
+    padding = 12
 
     # Horizontal padding.
-    horizontal_padding = 8
+    horizontal_padding = 16
 
     # Padding between text and icon.
-    text_icon_padding = 8
+    text_icon_padding = 12
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
-    frame_color = "#aaaaaa"
+    frame_color = "#FFA759"
+
+    # Progress-bar fill colour (Ayu Mirage orange).
+    highlight = "#FFA759"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
     # of size frame_width will be drawn around each notification instead.
     # Click events on gaps do not currently propagate to applications below.
-    gap_size = 0
+    gap_size = 8
 
     # Define a color for the separator.
     # possible values are:
@@ -117,7 +120,7 @@
 
     ### Text ###
 
-    font = JetBrainsMono Nerd Font 12
+    font = JetBrainsMono Nerd Font 10
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -244,7 +247,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 6
+    corner_radius = 10
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -307,24 +310,25 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#222222"
-    foreground = "#888888"
+    background = "#1F2430"
+    foreground = "#8A919E"
+    frame_color = "#525B6B"
     timeout = 8
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#260F25"
-    foreground = "#F2CFC2"
-    frame_color = "#F24C3D"
+    background = "#1F2430"
+    foreground = "#CBCCC6"
+    frame_color = "#FFA759"
     timeout = 8
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_critical]
-    background = "#900000"
-    foreground = "#ffffff"
-    frame_color = "#ff0000"
+    background = "#2D1B1B"
+    foreground = "#FFD9D2"
+    frame_color = "#FF6666"
     timeout = 8
     # Icon for notifications with critical urgency, uncomment to enable
     #default_icon = /path/to/icon
