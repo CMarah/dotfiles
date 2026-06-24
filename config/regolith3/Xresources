@@ -1,0 +1,22 @@
+!regolith.look.path: /usr/share/regolith-look/default
+regolith.look.path: /usr/share/regolith-look/lascaille
+regolith.wallpaper.options: stretched
+! regolith.wallpaper.file: ~/wallpapers/wp2212905.jpg
+
+wm.gaps.inner.size: 15
+
+! Fast screen lock for Super+L (overrides the slow Regolith dbus GNOME ScreenSaver lock).
+wm.program.lock: /home/carlos/.config/regolith3/i3/lock.sh
+
+! Notifications: use dunst (popup banners) instead of Regolith rofication. This resource
+! is read by config.d/82_rofication-ilia, whose autostart hook (exec $wm.program.notifications)
+! now launches dunst at login instead of the rofication notification-center daemon.
+wm.program.notifications: /usr/local/bin/dunst
+
+! Alt+n re-shows the most recent notification (dunst history). Overrides the Regolith
+! rofication viewer (ilia -p notifications), which no longer applies now we use dunst.
+wm.program.notification_ui: /usr/local/bin/dunstctl history-pop
+!regolith.wallpaper.file: /home/carlos/.local/share/backgrounds/2025-02-19-15-09-06-hyperlightdrifter1.jpg
+!regolith.lockscreen.wallpaper.file: /home/carlos/.local/share/backgrounds/2025-02-19-15-09-06-hyperlightdrifter1.jpg
+regolith.wallpaper.file: /home/carlos/.local/share/backgrounds/2025-02-19-15-09-06-hyperlightdrifter1.jpg
+regolith.lockscreen.wallpaper.file: /home/carlos/.local/share/backgrounds/2025-02-19-15-09-06-hyperlightdrifter1.jpg

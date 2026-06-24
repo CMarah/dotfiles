@@ -43,6 +43,8 @@ bindsym Mod1+Shift+Up move up
 bindsym $mod+d exec rofi -modi drun -show drun -columns 3
 # Start dooit
 bindsym $mod+t exec alacritty --title floater -e "dooit"
+# Start keyb
+bindsym $mod+g exec alacritty --title floater -e "keyb"
 # reload
 bindsym $mod+Shift+c reload
 

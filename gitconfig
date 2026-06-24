@@ -4,7 +4,7 @@
 [commit]
   gpgSign = false
 [core]
-  editor = vim
+	editor = nvim
 [alias]
   co = checkout
   di = diff
@@ -13,3 +13,5 @@
   cm = commit
 [credential]
   helper = cache
+[init]
+	defaultBranch = main

@@ -78,11 +78,13 @@ alias gst='git status'
 alias gco='git checkout'
 alias gcm='git commit'
 alias ls='colorls --sd'
-alias crm='cd ~/coding/walcucrm'
+alias crm='cd ~/coding/walcucrm; zsh open_crm.sh'
 alias mauth='cd ~/coding/walcucrm/MAPP-Auth'
 alias mapi='cd ~/coding/walcucrm/MAPP-Api'
 alias mapex='cd ~/coding/walcucrm/MAPP-Externals'
 alias mawc='cd ~/coding/walcucrm/MAPP-WebClient'
+alias maso='cd ~/coding/walcucrm/MAPP-Sockets'
+alias wr='walcu run'
 
 # Add ruby gems to path
 if which ruby >/dev/null && which gem >/dev/null; then
@@ -98,12 +100,22 @@ fi
 # Add pip3.11 to path
 PATH=$PATH:/home/carlos/.local/bin
 
-
-# WORK
-[ -f /home/carlos/coding/Keys/variables.sh ] && source /home/carlos/coding/Keys/variables.sh
-
+# AWS
+export AWS_PROFILE=dev
 
 # NVM
 export NVM_DIR="$HOME/.config//nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # nvm bash_completion
+
+# pnpm
+export PNPM_HOME="/home/carlos/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# WORK
+[ -f /home/carlos/coding/Keys/variables.sh ] && source /home/carlos/coding/Keys/variables.sh
+[ -f /home/carlos/coding/Keys/setup_env.sh ] && source /home/carlos/coding/Keys/setup_env.sh
